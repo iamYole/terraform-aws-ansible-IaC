@@ -7,20 +7,20 @@ regions:
 strict: False
 
 keyed_groups:
-- key: tags
-  prefix: tag
+  - key: tags
+    prefix: tag
 
 filters:
   tag:Name:
-    - DIO-bastion
-    - DIO-nginx
-    - DIO-tooling
-    - DIO-wordpress
+    - DIO_bastion
+    - DIO_nginx
+    - DIO_tooling
+    - DIO_wordpress
 
-  instance-state-name : running
-  
+  instance-state-name: running
+
 hostnames:
-# a list in order of precedence for hostname variables.
+  # a list in order of precedence for hostname variables.
   - private-ip-address
   - tag:Name
   - dns-name
@@ -28,7 +28,3 @@ hostnames:
 
 compose:
   ansible_host: private_ip_address
-
-
-
- 

@@ -7,8 +7,8 @@ regions:
 strict: False
 
 keyed_groups:
-  - key: tags
-    prefix: tag
+- key: tags
+  prefix: tag
 
 filters:
   tag:Name:
@@ -17,7 +17,7 @@ filters:
     - DIO_tooling
     - DIO_wordpress
 
-  instance-state-name: running
+  instance-state-name : running
 
 hostnames:
   # a list in order of precedence for hostname variables.

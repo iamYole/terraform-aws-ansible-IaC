@@ -16,7 +16,6 @@ filters:
     - DIO_nginx
     - DIO_tooling
     - DIO_wordpress
-
   instance-state-name : running
 
 hostnames:

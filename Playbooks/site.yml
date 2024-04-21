@@ -1,23 +1,23 @@
 ---
- - hosts: tag_Name_ACS_nginx
+ - hosts: tag_Name_DIO_nginx
  - name: nginx assignment
-   import_playbook: ../static-assignments/nginx.yml
+   import_playbook: ../Static-Assignments/nginx.yml
 
- - hosts: tag_Name_ACS_tooling 
+ - hosts: tag_Name_DIO_tooling 
  - name: tooling assignment
-   import_playbook: ../static-assignments/tooling.yml
+   import_playbook: ../Static-Assignments/tooling.yml
 
- - hosts: tag_Name_ACS_wordpress
+ - hosts: tag_Name_DIO_wordpress
  - name: wordpress assignment
-   import_playbook: ../static-assignments/wordpress.yml
+   import_playbook: ../Static-Assignments/wordpress.yml
 
- - hosts: tag_Name_ACS_jenkins
- - name: jenkins assignment
-   import_playbook: ../static-assignments/jenkins.yml  
+#  - hosts: tag_Name_ACS_jenkins
+#  - name: jenkins assignment
+#    import_playbook: ../static-assignments/jenkins.yml  
 
- - hosts: tag_Name_ACS_artifactory
- - name: artifactory assignment
-   import_playbook: ../static-assignments/jfrog.yml
+#  - hosts: tag_Name_ACS_artifactory
+#  - name: artifactory assignment
+#    import_playbook: ../static-assignments/jfrog.yml
 
 
 
